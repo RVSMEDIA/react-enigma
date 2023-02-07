@@ -224,7 +224,7 @@ section {
 }
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #ff5e31;
+  color: #c61b48;
   font-size: 18px;
   line-height: 1;
 }
@@ -255,12 +255,27 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #ff4a17;
+  background: #c61b48;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
 }
 
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+#footer .credits a {
+  transition: 0.3s;
+  color: #c61b48;
+  text-decoration: none;
+}
 .breadcrumbs .page-header {
   padding: 140px 0 80px 0;
   position: relative;
@@ -305,7 +320,7 @@ section {
 .breadcrumbs nav ol li+li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #4278cc;
+  color: #c61b48;
   content: "/";
 }
 .breadcrumbs nav ol li+li {
@@ -324,7 +339,7 @@ section {
 .work-inner .content ul i {
   flex-shrink: 0;
   font-size: 48px;
-  color: #4278cc;
+  color: #c61b48;
   margin-right: 20px;
   line-height: 0;
 }
@@ -333,4 +348,194 @@ section {
 }
 .work-inner .content p:last-child {
   margin-bottom: 0;
+}
+
+.section-header {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+.section-header span {
+  position: absolute;
+  top: 46px;
+  color: rgba(14, 29, 52, 0.06);
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 56px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+.section-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #c61b48;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section-header h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #c61b48;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid rgba(14, 29, 52, 0.15);
+}
+.team .member img {
+  margin: -1px -1px 30px -1px;
+}
+.team .member .member-content {
+  padding: 0 20px 30px 20px;
+}
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+.team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #6c757d;
+}
+.team .member p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #6c757d;
+}
+.team .member .social {
+  margin-top: 15px;
+}
+.team .member .social a {
+  color: rgba(14, 29, 52, 0.5);
+  transition: 0.3s;
+}
+.team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+  color: #c61b48;
+}
+.section-title p {
+  margin-bottom: 0;
+  /* max-width: 80%;
+  margin: 0 auto; */
+}
+
+
+.et-section .icon-box:hover {
+  transform: translateY(-10px);
+}
+.et-section .icon-box {
+  box-shadow: 0px 0 25px 0 rgb(0 0 0 / 10%);
+  padding: 50px 30px;
+  transition: all ease-in-out 0.4s;
+  background: #fff;
+}
+.et-section .icon-box .icon {
+  margin-bottom: 10px;
+}
+.et-section .icon-box .icon i {
+  color: #c61b48;
+  font-size: 36px;
+  transition: 0.3s;
+}
+.et-section .icon-box h6 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.et-section .icon-box h6 a {
+  color: #c61b48;
+  transition: ease-in-out 0.3s;
+  text-decoration: none;
+}
+.et-section .icon-box:hover h6 a {
+  color: #f36;
+  transition: ease-in-out 0.3s;
+}
+
+.work-inner.seo-inner h2{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 55px
+}
+.work-inner.seo-inner p{
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.work-inner.seo-inner h4{
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px
+}
+.work-inner.seo-inner .content ul{
+  margin:20px 0 0;
+}
+.work-inner.seo-inner .content ul li{
+  margin-top: 0px;
+  font-size: 17px;
+  line-height: 35px;
+}
+.work-inner.seo-inner .content ul i{
+  margin-right: 10px;
+  font-size: 18px;
+  line-height: 37px;
+}
+
+.cta {
+  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url(../src/images/cta-bg.jpg) fixed center center;
+  background-size: cover;
+  padding: 120px 0;
+}
+.cta h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+.cta p {
+  color: #fff;
+  margin-bottom: 0;
+}
+.cta .cta-btn {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
 }

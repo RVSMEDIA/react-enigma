@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Member from "./component/Member";
 import aboutinner from './images/about-inner.jpg';
+
 const Work = () =>{
   return( 
     <>
@@ -41,6 +43,17 @@ const Work = () =>{
               <li><i className="bi bi-broadcast"></i><div><h5>Voluptatem et qui exercitationem</h5><p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p></div></li>
              </ul>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="team" className="team">
+        <div className="container">
+          <div className="section-header">
+            <span>Our Team</span>
+            <h2>Our Team</h2>
+          </div>
+          <div className="row">
+            <Member/>
           </div>
         </div>
       </section>

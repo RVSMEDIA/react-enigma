@@ -78,6 +78,13 @@ const Footer = () =>{
              </div>
             </div>
            </div>
+           <div className="container">
+             <div className="copyright">
+              © Copyright 
+              <strong><span> RVS</span></strong> . All Rights Reserved
+             </div>
+             <div className="credits"> Designed by <a href="https://rvslivenew.idevelopment.site/">RVS</a></div>
+           </div>
         </div>
       </footer>
     )
