@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import UseEffectAPI from "./component/UseEffectAPI";
 const About = () =>{
   return( 
     <>
@@ -25,6 +26,7 @@ const About = () =>{
           </div>
         </nav>
       </div>
+      <UseEffectAPI/>
     </>
   )
 }

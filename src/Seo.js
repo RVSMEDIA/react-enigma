@@ -55,7 +55,7 @@ const Seo = () =>{
               <p>Book a call with us because our professionals are waiting to hear from you!</p>
             </div>
             <div className="col-lg-3 cta-btn-container text-center">
-             <a className="cta-btn align-middle" href="#">Call To Action</a>
+             <span className="cta-btn align-middle">Call To Action</span>
             </div>
           </div>
         </div>

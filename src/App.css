@@ -539,3 +539,10 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
+.avatar_card img {
+  max-width: 9em;
+  height: 100%;
+  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-top-left-radius: calc(0.25rem - 1px);
+}
