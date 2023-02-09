@@ -8,10 +8,11 @@ const UseEffectAPI = () =>{
     const [users,setUsers] = useState([]);
     const [loading,setLoading] = useState(true);
     const [currentPage,setCurrentPage] = useState(1);
-    const [postsPerPage,setPostsPerPage] = useState(8);
+    const [postsPerPage,setPostsPerPage] = useState(0);
     
     const getUsers = async() =>{
       try{
+         setPostsPerPage(8);
          setLoading(false);
          const response = await fetch("https://api.github.com/users");
          setUsers(await response.json());
