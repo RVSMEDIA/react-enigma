@@ -1,22 +1,20 @@
 import aboutimage from './images/about.jpg';
 import List from './component/List';
-
+import HeroSection from './component/HeroSection';
+import { useProductContext } from './context/ProductContext';
+import FeaturedProducts from './component/FeaturedProducts';
 const Home = () =>{
+  const {myName} = useProductContext();
+  const headingdata = {
+    headingname : "Plan. Launch. Grow."
+  }
+  const subheading = {
+    subheadingdata : "We are team of talented designers making websites with RVS"
+  }
   return( 
     <>
-      <section id="hero">
-       <div className="hero-container">
-          <h1>Plan. Launch. Grow.</h1>
-          <h2>We are team of talented designers making websites with RVS</h2>
-          <div className="d-flex"> 
-            <a href="/about" className="btn-get-started scrollto">Get Started</a> 
-             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" className="glightbox btn-watch-video">
-              <i className="bi bi-play-circle"></i>
-               <span>Watch Video</span>
-             </a>
-          </div>
-        </div>
-    </section>
+    {myName}
+    <HeroSection tagh1 = {headingdata} tagsubheading = {subheading}/>
     <main id ="main">
        <section id="about" className="about">
           <div className="container">
@@ -31,6 +29,7 @@ const Home = () =>{
               </div>
           </div>
        </section>
+       <FeaturedProducts/>
     </main>
     </>
   )

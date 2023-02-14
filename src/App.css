@@ -33,6 +33,7 @@ body{
   display: flex;
   list-style: none;
   align-items: center;
+  
 }
 .navbar>ul>li {
   white-space: nowrap;
@@ -107,8 +108,8 @@ body{
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #ff4a17;
-  border: 2px solid #ff4a17;
+  background: #c61b48;
+  border: 2px solid #c61b48;
   text-decoration: none;
 }
 #hero .btn-watch-video {
@@ -316,6 +317,7 @@ section {
   color: #0e1d34;
   transition: 0.3s;
   text-decoration: none;
+  text-transform: capitalize;
 }
 .breadcrumbs nav ol li+li::before {
   display: inline-block;
@@ -574,4 +576,317 @@ section {
   border-color: #101010;
   background: #ffe400;
   color: #101010;
+}
+
+.cart-trolley{
+  font-size: 30px;
+}
+.cart-trolley--link{
+  position: relative;
+}
+.cart-total--item{
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  top:-20%;
+  left:70%;
+  display: grid;
+  place-items: center;
+}
+.mobile-navbar-btn{
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+.mobile-nav-icon[name="close-outline"]{
+  display: none;
+}
+.close-outline{
+  display: none;
+}
+
+@media (max-width:768px){
+  .mobile-navbar-btn{
+    display: inline-block;
+    z-index: 9999;
+  }
+  .mobile-nav-icon{
+    font-size: 2.2rem;
+    color: #fff;
+  }
+  .active .mobile-nav-icon{
+    display: none;
+    font-size: 2.2rem;
+    /* position: absolute;
+    top:30%;
+    right:10%; */
+    color:#fff;
+    z-index: 9999;
+  }
+  .active .close-outline{
+    display: inline-block;
+  }
+  .navbar-lists{
+    width: 100vh;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 3s linear;
+  }
+  .active .navbar-lists{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 999;
+    transform-origin:right;
+    transition: all 3s linear;
+  }
+  .navbar-link{
+    font-size: 4.2rem;
+  }
+
+}
+
+.error h1{
+  color:#fff;
+}
+
+#featured-product .section-title h2 {
+  text-align: left;
+  font-size: 14px;
+  color: #263d4d;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+}
+
+#featured-product .section-title p{
+  text-align: left;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.sections-bg {
+  background-color: #f6f6f6;
+}
+
+.featured-product .featured-product-card {
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.featured-product .featured-product-card:hover img{
+  transform: scale(1.1);
+}
+.featured-product .featured-product-card img{
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+.featured-product .featured-product-card .featured-info {
+  padding: 25px 20px;
+  background-color: #fff;
+  position: relative;
+  border-top: 1px solid #f3f3f3;
+  z-index: 2;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.featured-product .featured-product-card a{
+  text-decoration: none;
+  color: #000;
+}
+.featured-product .featured-product-card .featured-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.featured-product .featured-product-card h4{
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  z-index: 3;
+  color: #fff;
+  background-color: rgba(198,27,72,0.9);
+  padding: 10px;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+
+.grid{
+  display: grid;
+  gap: 9rem;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+.product_images {
+  display: flex;
+  align-items: center;
+}
+.product-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.product-data-warranty {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+.product-warranty-data {
+  text-align: center;
+}
+.warranty-icon {
+  background-color: rgba(220, 220, 220, 0.5);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.6rem;
+}
+p {
+  font-size: 1.0rem;
+  padding-top: 0.4rem;
+}
+.product-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-data-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+}
+
+span {
+  font-weight: bold;
+}
+.product-data-price {
+  font-weight: bold;
+  padding-top: 1rem;
+  margin: 0;
+}
+.product-data-real-price{
+  color: #c61b48;
+}
+
+.grid-four-column {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+img.box-image--style{
+  max-width: 160px;
+  max-height: 160px;
+  background-size: cover;
+  object-fit: contain;
+  cursor: pointer;
+}
+.grid.grid-four-column.image-comp{
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.main-screen {
+  display: grid;
+  place-items: center;
+  order: 1;
+  
+}
+.main-screen img {
+  max-width: 100%;
+  height: auto;
+}
+figure{
+  margin: 0 0 0rem;
+}
+.icon-style {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+.icon {
+  font-size: 1.2rem;
+  color: #c61b48;
+}
+.icon-style p {
+  margin: 0;
+  padding-left: 0.6rem;
+}
+
+.colors p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+hr{
+  color: #000;
+  border-top: 2px solid #000;
+  opacity: 1;
+  width: 100%;
+}
+.btnStyle {
+  width: 2rem;
+  height: 2rem;
+  background-color: #000;
+  border-radius: 50%;
+  margin-left: 1rem;
+  border: none;
+  outline: none;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.btnStyle:hover{
+  opacity: 1;
+}
+.active {
+  opacity: 1;
+}
+.checkStyle {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.amount-toggle {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.amount-toggle button {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 1.0rem 1.0rem;
+}
+.amount-style {
+  font-size: 2.1rem;
 }
