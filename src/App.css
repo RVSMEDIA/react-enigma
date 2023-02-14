@@ -890,3 +890,6 @@ hr{
 .amount-style {
   font-size: 2.1rem;
 }
+.grid-filter-column {
+  grid-template-columns: 0.2fr 1fr;
+}
