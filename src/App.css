@@ -893,3 +893,50 @@ hr{
 .grid-filter-column {
   grid-template-columns: 0.2fr 1fr;
 }
+
+.sections-bg.sections-bg-color{
+  background-color: #666;
+}
+
+
+.grid-card-data{
+  gap: 2.2rem;
+}
+
+.about-img{
+  position: relative;
+}
+.about-img:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  transform: rotate(360deg);
+}
+.about-img:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  transform: rotate(16deg);
+}
+.about-img img {
+  position: relative;
+  z-index: 3;
+  border-radius: 15px;
+}
+.sort-btn {
+  padding: 0.8rem 1rem;
+  border: none;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+.icon {
+  font-size: 1.6rem;
+}
+.sorting-list--grid .active {
+  background-color: #000;
+  color: #fff;
+}
