@@ -16,6 +16,7 @@ const SingleProduct = ()=> {
   useEffect(()=>{
     const resp = `${API}?id=${id}`
     getSingleProduct(resp)
+    // eslint-disable-next-line
   },[id])
   if(isSingleLoading){
     return <div>.....Loading</div>
