@@ -4,15 +4,16 @@ import reducer from "../reducer/productReducer";
 const AppContext = createContext();
 const API = "https://api.pujakaitem.com/api/products";
 
+const initialState = {
+    isLoading:false,
+    isError:false,
+    products:[],
+    featureProducts :[],
+    isSingleLoading:false,
+    singleProduct:{}
+}
 const AppProvider = ({ children }) =>{
-    const initialState = {
-        isLoading:false,
-        isError:false,
-        products:[],
-        featureProducts :[],
-        isSingleLoading:false,
-        singleProduct:{}
-    }
+    
     const [state,dispatch] = useReducer(reducer,initialState);
     const getProducts = async(url)=>{
         dispatch({type:"SET_LOADING"})
@@ -38,7 +39,7 @@ const AppProvider = ({ children }) =>{
      getProducts(API);
     },[]);
 
-    return<AppContext.Provider value={{ ...state,getSingleProduct }}>{children}</AppContext.Provider>
+    return<AppContext.Provider value={{ ...state, getSingleProduct }}>{children}</AppContext.Provider>
 }
 
 const useProductContext = () =>{

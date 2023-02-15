@@ -14,9 +14,10 @@ const SingleProduct = ()=> {
   const {name,price,company,description,category,stock,reviews,stars,image} = singleProduct;
 
   useEffect(()=>{
-    const resp = `${API}?id=${id}`
-    getSingleProduct(resp)
+        const resp = `${API}?id=${id}`
+        getSingleProduct(resp)
   },[id])
+  
   if(isSingleLoading){
     return <div>.....Loading</div>
   }
