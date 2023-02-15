@@ -14,8 +14,9 @@ const SingleProduct = ()=> {
   const {name,price,company,description,category,stock,reviews,stars,image} = singleProduct;
 
   useEffect(()=>{
-        const resp = `${API}?id=${id}`
-        getSingleProduct(resp)
+    const resp = `${API}?id=${id}`
+    getSingleProduct(resp)
+    // eslint-disable-next-line
   },[id])
   
   if(isSingleLoading){
